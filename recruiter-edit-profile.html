@@ -1,0 +1,464 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./imgs/logo-mini.svg">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./fonts/icon-vietstart/style.css" rel="stylesheet">
+    <link href="./css/responsive.css" rel="stylesheet">
+    <link href="./css/font-awsome.min.css" rel="stylesheet">
+    <link href="./css/recruiter.css" rel="stylesheet">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script defer src="./js/font-awsome.js"></script>
+    <title>VietStar - Dashboard</title>
+</head>
+
+<body class="bg-gray">
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-xl navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand me-auto" href="#">
+                <img src="./imgs/logo-new.svg" alt="vietstar">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav me-3 flex-grow-1 justify-content-end">
+                    <a class="nav-link text-main-color active" href="#">Ứng viên</a>
+                    <a class="nav-link text-main-color" href="#">Vietnam Salary</a>
+                    <a class="nav-link text-main-color" href="#">CareerMap</a>
+                    <a class="nav-link text-main-color" href="#">Cẩm nang</a>
+                    <a class="nav-link text-main-color" href="#">Liên hệ</a>
+                    <a class="nav-link text-main-color" href="#">Tính lương</a>
+                    <a class="nav-link btn btn-primary color-white" href="#">Post a job</a>
+                </div>
+            </div>
+            <div class="user-badge">
+                <div>
+                    <p>Your Wallet</p>
+                    <h5 class="dolar-sign text-blue-color m-0">200.000</h5>
+                </div>
+                <div class="user-badge__avatar">
+                    <img src="./imgs/default-avatar.png" alt="vietstar">
+                </div>
+            </div>
+            <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumbs my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h3>Edit Company Profile</h3>
+                </div>
+                <div class="col-lg-9">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mt-2">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Edit Company Profile</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Main content -->
+    <section class="main-content my-5">
+        <div class="container">
+            <div class="row">
+               <div class="col-lg-3">
+                    <!-- Side bar -->
+                    <div class="list-group menu-sidebar">
+                        <a href="recruiter-dasshboard.html" class="list-group-item list-group-item-action active">
+                            <div class="d-flex w-100">
+                                <span class="iconmoon icon-dashboard-icon fs-24px me-2"></span>
+                                Dashboard
+                            </div>
+                        </a>
+                        <a href="recruiter-edit-profile.html" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100">
+                                <span class="iconmoon icon-edit-icon fs-24px me-2"></span>
+                                <strong>Edit profile</strong>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100">
+                                <span class="iconmoon icon-eye-icon fs-24px me-2"></span>
+                                <strong>View Public Profile</strong>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100">
+                                <span class="iconmoon icon-suitcase-icon fs-24px me-2"></span>
+                                <strong>Post Jobs</strong>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100">
+                                <span class="iconmoon icon-recruiter-profile fs-24px me-2"></span>
+                                <strong>CV Search Packages</strong>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100">
+                                <span class="iconmoon icon-calendar-icon1 fs-24px me-2"></span>
+                                <strong>Interview Schedule</strong>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100">
+                                <span class="iconmoon icon-recruiter-portfolio fs-24px me-2"></span>
+                                <strong>View Shared CV</strong>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100">
+                                <span class="iconmoon icon-recruiter-withdrawal fs-24px me-2"></span>
+                                <strong>Withdraw</strong>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100">
+                                <span class="iconmoon icon-recruiter-user fs-24px me-2"></span>
+                                <strong>Unlocked Users</strong>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100">
+                                <span class="iconmoon icon-message-icon fs-24px me-2"></span>
+                                <strong>Company Messages</strong>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100">
+                                <span class="iconmoon icon-team-icon fs-24px me-2"></span>
+                                <strong>Company Followers</strong>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100">
+                                <span class="iconmoon icon-logout-icon fs-24px me-2"></span>
+                                <strong>Logout</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <!-- Main -->
+                    <!-- Bio -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card card-edit-profile mb-3 w-100 shadow-sm">
+                                <div class="card-body">
+                                    <form action="">
+                                        <div class="section-infomation company-image">
+                                            <div class="row">
+                                                <div class="col-md-5 col-lg-4">
+                                                    <label for="">Company Logo</label>
+                                                    <div class="logo-company">
+                                                        <img src="./imgs/avata.png" alt="">
+                                                    </div>
+                                                    <button class="btn btn-primary" type="button">Select Logo</button>
+                                                </div>
+                                                <div class="col-md-7 col-lg-8">
+                                                    <label for="">Company Logo</label>
+                                                    <div class="cover-photo">
+                                                        <img src="./imgs/cover-photo.png" alt="">
+                                                    </div>
+                                                    <button class="btn btn-primary" type="button">Select Cover Image</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="section-infomation account-infomation">
+                                            <h3 class="title">Account Information</h3>
+            
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="Company_Name">Email</label>
+                                                        <input type="text" class="form-control" id="Company_Name"
+                                                            placeholder="Company Name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="CEO_Name">Password</label>
+                                                        <input type="text" class="form-control" id="CEO_Name"
+                                                            placeholder="CEO Name">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="section-infomation company-infomation">
+                                            <h3 class="title">Company Information</h3>
+            
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="Company_Name">Company Name</label>
+                                                        <input type="text" class="form-control" id="Company_Name"
+                                                            placeholder="Company Name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="CEO_Name">CEO Name</label>
+                                                        <input type="text" class="form-control" id="CEO_Name"
+                                                            placeholder="CEO Name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="Industry">Industry</label>
+                                                        <select class="form-select form-control" id="Industry">
+                                                            <option selected>Select One</option>
+                                                            <option value="1">Male</option>
+                                                            <option value="2">FeMale</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="Ownership">Ownership</label>
+                                                        <select class="form-select form-control" id="Ownership">
+                                                            <option selected>Select One</option>
+                                                            <option value="1">Single</option>
+                                                            <option value="2">Family</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="Description">Description</label>
+                                                        <textarea class="form-control" id="Description" rows="4"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="Country">Country</label>
+                                                        <select class="form-select form-control" id="Country">
+                                                            <option selected>Select One</option>
+                                                            <option value="1">United States of America</option>
+                                                            <option value="2">Viet Nam</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="State">State</label>
+                                                        <select class="form-select form-control" id="State">
+                                                            <option selected>Select One</option>
+                                                            <option value="1">Washington</option>
+                                                            <option value="2">California</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="City">City</label>
+                                                        <select class="form-select form-control" id="City">
+                                                            <option selected>Select One</option>
+                                                            <option value="1">United States of America</option>
+                                                            <option value="2">Viet Nam</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="Nationality">Nationality</label>
+                                                        <select class="form-select form-control" id="Nationality">
+                                                            <option selected>Select One</option>
+                                                            <option value="1">Washington</option>
+                                                            <option value="2">California</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="Address">Address</label>
+                                                        <input type="text" class="form-control" id="Address" placeholder="Address">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="Google_Map_Iframe">Google Map Iframe</label>
+                                                        <textarea class="form-control" id="Google_Map_Iframe" rows="4"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="State">No of Office</label>
+                                                        <select class="form-select form-control" id="State">
+                                                            <option selected>Select One</option>
+                                                            <option value="1">5</option>
+                                                            <option value="2">10</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="City">No of Employees</label>
+                                                        <select class="form-select form-control" id="City">
+                                                            <option selected>Select One</option>
+                                                            <option value="1">10 - 20</option>
+                                                            <option value="2">20 - 50</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="Established_In">Established In</label>
+                                                        <input type="text" class="form-control" id="Established_In"
+                                                            placeholder="Established In">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="Website_URL">Website URL</label>
+                                                        <input type="text" class="form-control" id="Website_URL"
+                                                            placeholder="Website URL">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="Fax">Fax</label>
+                                                        <input type="text" class="form-control" id="Fax" placeholder="Fax">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="Phone_number">Phone number</label>
+                                                        <input type="text" class="form-control" id="Phone_number"
+                                                            placeholder="Phone number">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="Facebook">Facebook</label>
+                                                        <input type="text" class="form-control" id="Facebook"
+                                                            placeholder="Facebook">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="Twitter">CEO Name</label>
+                                                        <input type="text" class="form-control" id="Twitter" placeholder="Twitter">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="LinkedIn">LinkedIn</label>
+                                                        <input type="text" class="form-control" id="LinkedIn"
+                                                            placeholder="LinkedIn">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="Google_Plus">Google Plus</label>
+                                                        <input type="text" class="form-control" id="Google_Plus"
+                                                            placeholder="Google Plus">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="Subscribe">
+                                                        <label class="form-check-label" for="Subscribe">
+                                                            Subscribe to news letter
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <button class="btn btn-primary" type="submit">Update profile and Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center bg-white text-lg-start text-muted border-top">
+        <section class="links">
+            <div class="container">
+                <div class="text-center text-md-start">
+                    <div class="row mt-3">
+                        <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mb-4">
+                            <img src="./imgs/logo-new.svg" alt="vietstar">
+                            <p class="fs-18px py-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <div class="socials">
+                                <i class="fab fa-facebook-f fa-lg me-3"></i>
+                                <i class="fab fa-twitter fa-lg me-3"></i>
+                                <i class="fab fa-instagram fa-lg me-3"></i>
+                                <i class="fab fa-linkedin-in fa-lg me-3"></i>
+                                <i class="fab fa-youtube fa-lg me-3"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="fw-bold mb-40px">Ứng viên</h6>
+                            <p><a href="#" class="text-reset fs-16px no-underline">Việc làm mới nhất</a></p>
+                            <p><a href="#" class="text-reset fs-16px no-underline">CV Hay</a></p>
+                            <p><a href="#" class="text-reset fs-16px no-underline">VietnamSalary</a></p>
+                            <p><a href="#" class="text-reset fs-16px no-underline">CareerMap</a></p>
+                            <p><a href="#" class="text-reset fs-16px no-underline">Cẩm Nang</a></p>
+                            <p><a href="#" class="text-reset fs-16px no-underline">IT Blogs</a></p>
+                            <p><a href="#" class="text-reset fs-16px no-underline">Sơ Đồ Trang Web</a></p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="fw-bold mb-40px">Nhà tuyển dụng</h6>
+                            <p><a href="#" class="text-reset fs-14px no-underline">Đăng tuyển dụng</a></p>
+                            <p><a href="#" class="text-reset fs-14px no-underline">Tìm Hồ Sơ</a></p>
+                            <p><a href="#" class="text-reset fs-14px no-underline">Giải Pháp Talent</a></p>
+                            <p><a href="#" class="text-reset fs-14px no-underline">Solution</a></p>
+                            <p><a href="#" class="text-reset fs-14px no-underline">Sản Phẩm Dịch Vụ</a></p>
+                        </div>
+                        <div class="contact col-md-4 col-lg-3 col-xl-4 mx-auto mb-md-0 mb-4">
+                            <h6 class="fw-bold mb-40px">Liên hệ</h6>
+                            <div class="contact-detail">
+                                <p><i class="far fa-envelope me-3"></i>info@vietstargroup.vn</p>
+                                <p><i class="far fa-phone me-3"></i>02871000555</p>
+                                <p><i class="far fa-map-marker-alt me-3"></i>VP HCM: Tầng 03, Tòa nhà Long Mã Building,
+                                    602-602A Cộng
+                                    Hòa,
+                                    Phường 13,Quận Tân Bình, TP.HCM</p>
+                                <p><i class="far fa-map-marker-alt me-3"></i>VP Hà Nội: Khu đô thị Tây Nam Linh Đàm, Hoàng
+                                    Liệt, Hoàng
+                                    Mai, Hà
+                                    Nội</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="d-flex justify-content-between text-center py-4 border-top">
+            <div class="container">
+                <p class="fs-18px">Copyright © 2022</p>
+                <div class="term-link">
+                    <span class="fs-18px pe-2">All Rights Reserved</span>
+                    <div class="d-inline-block border-start"><a class="fs-18px px-2" href="#">Điều khoản</a></div>
+                    <div class="d-inline-block border-start"><a class="fs-18px ps-2" href="#">Chính sách</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+</body>
+
+</html>

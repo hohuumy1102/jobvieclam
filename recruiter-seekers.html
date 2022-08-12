@@ -1,0 +1,862 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./imgs/logo-mini.svg">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./fonts/icon-vietstart/style.css" rel="stylesheet">
+    <link href="./css/responsive.css" rel="stylesheet">
+    <link href="./css/font-awsome.min.css" rel="stylesheet">
+    
+    <link href="./css/recruiter.css" rel="stylesheet">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script defer src="./js/font-awsome.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <title>VietStar - Dashboard</title>
+</head>
+
+<body class="bg-gray">
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-xl navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand me-auto" href="#">
+                <img src="./imgs/logo-new.svg" alt="vietstar">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav me-3 flex-grow-1 justify-content-end">
+                    <a class="nav-link text-main-color active" href="#">Ứng viên</a>
+                    <a class="nav-link text-main-color" href="#">Vietnam Salary</a>
+                    <a class="nav-link text-main-color" href="#">CareerMap</a>
+                    <a class="nav-link text-main-color" href="#">Cẩm nang</a>
+                    <a class="nav-link text-main-color" href="#">Liên hệ</a>
+                    <a class="nav-link text-main-color" href="#">Tính lương</a>
+                    <a class="nav-link btn btn-primary color-white" href="#">Post a job</a>
+                </div>
+            </div>
+            <div class="user-badge">
+                <div>
+                    <p>Your Wallet</p>
+                    <h5 class="dolar-sign text-blue-color m-0">200.000</h5>
+                </div>
+                <div class="user-badge__avatar">
+                    <img src="./imgs/default-avatar.png" alt="vietstar">
+                </div>
+            </div>
+            <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+
+    
+
+    <section class="section-search-seekers">
+        <div class="container">
+            <form action="" class="form-search-seekers">
+                <div class="form-group form-group-text">
+                    <input type="text" name="" id="" class="form-control" placeholder="Enter skills or job seeker details">
+                </div>
+                <div class="form-group form-group-selected">
+                    <select class="form-select form-control" id="Functional_Area">
+                        <option selected>Functional Area</option>
+                        <option value="1">8:00</option>
+                        <option value="2">8:30</option>
+                    </select>
+                </div>
+                <div class="form-group form-group-selected">
+                    <select class="form-select form-control" id="Select_Location">
+                        <option selected>Select Location</option>
+                        <option value="1">8:00</option>
+                        <option value="2">8:30</option>
+                    </select>
+                </div>
+                <div class="form-group form-group-selected">
+                    <select class="form-select form-control" id="Select_State">
+                        <option selected>Select State</option>
+                        <option value="1">8:00</option>
+                        <option value="2">8:30</option>
+                    </select>
+                </div>
+                <div class="form-group form-group-selected">
+                    <select class="form-select form-control" id="Select_City">
+                        <option selected>Select City</option>
+                        <option value="1">8:00</option>
+                        <option value="2">8:30</option>
+                    </select>
+                </div>
+                <div class="form-group-btn-search">
+                    <button class="btn btn-primary" type="submit"><span class="iconmoon icon-search"></span></button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumbs my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h3>Posted Jobs</h3>
+                </div>
+                <div class="col-lg-9">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mt-2">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Posted Jobs</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Nhân viên chăm sóc khách hàng</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Main content -->
+    <section class="main-content my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="sidebar-filter">
+                        <div class="element-filter" data-fiter="1">
+                            <h4 class="title-filter">By Country</h4>
+                            <div class="content-filter">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Country-1">
+                                    <label class="form-check-label" for="Country-1">
+                                        United States
+                                    </label>
+                                    <span class="count">3</span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Country-2">
+                                    <label class="form-check-label" for="Country-2">
+                                        India
+                                    </label>
+                                    <span class="count">1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="element-filter" data-fiter="2">
+                            <h4 class="title-filter">By State</h4>
+                            <div class="content-filter">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="State-1">
+                                    <label class="form-check-label" for="State-1">
+                                        California
+                                    </label>
+                                    <span class="count">3</span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="State-2">
+                                    <label class="form-check-label" for="State-2">
+                                        Washington
+                                    </label>
+                                    <span class="count">1</span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="State-3">
+                                    <label class="form-check-label" for="State-3">
+                                        Alabama
+                                    </label>
+                                    <span class="count">1</span>
+                                </div>
+                            </div>
+                            <button class="btn-viewmore" type="button" data-filter="2">View more</button>
+                        </div>
+                        <div class="element-filter" data-fiter="3">
+                            <h4 class="title-filter">By City</h4>
+                            <div class="content-filter">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="City-1">
+                                    <label class="form-check-label" for="City-1">
+                                        California
+                                    </label>
+                                    <span class="count">3</span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="City-2">
+                                    <label class="form-check-label" for="City-2">
+                                        Washington
+                                    </label>
+                                    <span class="count">1</span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="City-3">
+                                    <label class="form-check-label" for="City-3">
+                                        Alabama
+                                    </label>
+                                    <span class="count">1</span>
+                                </div>
+                            </div>
+                            <button class="btn-viewmore" type="button" data-filter="3">View more</button>
+                        </div>
+                        <div class="element-filter" data-fiter="4">
+                            <h4 class="title-filter">By Experience</h4>
+                            <div class="content-filter">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Experience-1">
+                                    <label class="form-check-label" for="Experience-1">
+                                        8 year
+                                    </label>
+                                    <span class="count">3</span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Experience-2">
+                                    <label class="form-check-label" for="Experience-2">
+                                        6 year
+                                    </label>
+                                    <span class="count">1</span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Experience-3">
+                                    <label class="form-check-label" for="Experience-3">
+                                        Fresh
+                                    </label>
+                                    <span class="count">1</span>
+                                </div>
+                            </div>
+            
+                        </div>
+                        <div class="element-filter" data-fiter="4">
+                            <h4 class="title-filter">By Career Level</h4>
+                            <div class="content-filter">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Career-1">
+                                    <label class="form-check-label" for="Career-1">
+                                        Experienced Professional
+                                    </label>
+                                    <span class="count">3</span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Career-2">
+                                    <label class="form-check-label" for="Career-2">
+                                        Department Head
+                                    </label>
+                                    <span class="count">1</span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Career-3">
+                                    <label class="form-check-label" for="Career-3">
+                                        Entry Level
+                                    </label>
+                                    <span class="count">1</span>
+                                </div>
+                            </div>
+            
+                        </div>
+                        <div class="element-filter" data-fiter="4">
+                            <h4 class="title-filter">By Gender</h4>
+                            <div class="content-filter">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Gender-1">
+                                    <label class="form-check-label" for="Gender-1">
+                                        Female
+                                    </label>
+                                    <span class="count">3</span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Gender-2">
+                                    <label class="form-check-label" for="Gender-2">
+                                        Male
+                                    </label>
+                                    <span class="count">1</span>
+                                </div>
+            
+                            </div>
+            
+                        </div>
+                        <div class="element-filter" data-fiter="4">
+                            <h4 class="title-filter">By Industry</h4>
+                            <div class="content-filter">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Career-1">
+                                    <label class="form-check-label" for="Career-1">
+                                        Information Technology
+                                    </label>
+                                    <span class="count">3</span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Career-2">
+                                    <label class="form-check-label" for="Career-2">
+                                        Accounting/Taxation
+                                    </label>
+                                    <span class="count">1</span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Career-3">
+                                    <label class="form-check-label" for="Career-3">
+                                        Accounting/Taxation
+                                    </label>
+                                    <span class="count">1</span>
+                                </div>
+                            </div>
+            
+                        </div>
+                        <div class="element-filter" data-fiter="4">
+                            <h4 class="title-filter">By Skill</h4>
+                            <div class="content-filter">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Career-1">
+                                    <label class="form-check-label" for="Career-1">
+                                        Adobe Illustrator
+                                    </label>
+                                    <span class="count">3</span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Career-2">
+                                    <label class="form-check-label" for="Career-2">
+                                        Adobe Photoshop
+                                    </label>
+                                    <span class="count">1</span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Career-3">
+                                    <label class="form-check-label" for="Career-3">
+                                        Java
+                                    </label>
+                                    <span class="count">1</span>
+                                </div>
+                            </div>
+                            <button class="btn-viewmore" type="button" data-filter="2">View more</button>
+                        </div>
+                        <div class="element-filter" data-fiter="4">
+                            <h4 class="title-filter">By Functional Areas</h4>
+                            <div class="content-filter">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Career-1">
+                                    <label class="form-check-label" for="Career-1">
+                                        Creative Design
+                                    </label>
+                                    <span class="count">3</span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Career-2">
+                                    <label class="form-check-label" for="Career-2">
+                                        Accounts, Finance
+                                    </label>
+                                    <span class="count">1</span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Career-3">
+                                    <label class="form-check-label" for="Career-3">
+                                        Accountant
+                                    </label>
+                                    <span class="count">1</span>
+                                </div>
+                            </div>
+                            <button class="btn-viewmore" type="button" data-filter="2">View more</button>
+                        </div>
+                        <div class="element-filter" data-fiter="4">
+                            <h4 class="title-filter">By Functional Areas</h4>
+                            <div class="content-filter">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Career-1">
+                                    <label class="form-check-label" for="Career-1">
+                                        Creative Design
+                                    </label>
+                                    <span class="count">3</span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Career-2">
+                                    <label class="form-check-label" for="Career-2">
+                                        Accounts, Finance
+                                    </label>
+                                    <span class="count">1</span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Career-3">
+                                    <label class="form-check-label" for="Career-3">
+                                        Accountant
+                                    </label>
+                                    <span class="count">1</span>
+                                </div>
+                            </div>
+                            <button class="btn-viewmore" type="button" data-filter="2">View more</button>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Current Salary">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Expected Salary">
+                            </div>
+                            <div class="form-group">
+                                <select class="form-select form-control" id="Select_Location">
+                                    <option selected>Curency</option>
+                                    <option value="1">USD</option>
+                                    <option value="2">VND</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="posted-job-profiles">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="profile">
+                                    <div class="profile-header">
+                                        <div class="avata">
+                                            <img src="./imgs/recruiter/avata.png" alt="">
+                                        </div>
+                                        <button type="button" class="btn btn-light">View profile</button>
+                                    </div>
+                                    <div class="profile-body">
+                                        <h3 class="name">Jackson D</h3>
+                                        <div class="desc">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Molestias dolorem officia vitae
+                                            dolorum explicabo necessitatibus aspernatur.
+                                        </div>
+                                        <ul class="profile-info mb-0">
+                                            <li>
+                                                <span class="iconmoon icon-location"></span> Hà Nội, Việt
+                                                Nam
+                                            </li>
+                                            <li class="status not-available">
+                                                <span class="iconmoon icon-profile"></span> Not Immediate
+                                                Available
+                                            </li>
+                                        </ul>
+                                    </div>
+            
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="profile">
+                                    <div class="profile-header">
+                                        <div class="avata">
+                                            <img src="./imgs/recruiter/avata.png" alt="">
+                                        </div>
+                                        <button type="button" class="btn btn-light">View profile</button>
+                                    </div>
+                                    <div class="profile-body">
+                                        <h3 class="name">Jackson D</h3>
+                                        <div class="desc">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Molestias dolorem officia vitae
+                                            dolorum explicabo necessitatibus aspernatur.
+                                        </div>
+                                        <ul class="profile-info mb-0">
+                                            <li>
+                                                <span class="iconmoon icon-location"></span> Hà Nội, Việt
+                                                Nam
+                                            </li>
+                                            <li class=" status available">
+                                                <span class="iconmoon icon-profile"></span> Available Now
+                                            </li>
+                                        </ul>
+                                    </div>
+            
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="profile">
+                                    <div class="profile-header">
+                                        <div class="avata">
+                                            <img src="./imgs/recruiter/avata.png" alt="">
+                                        </div>
+                                        <button type="button" class="btn btn-light">View profile</button>
+                                    </div>
+                                    <div class="profile-body">
+                                        <h3 class="name">Jackson D</h3>
+                                        <div class="desc">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Molestias dolorem officia vitae
+                                            dolorum explicabo necessitatibus aspernatur.
+                                        </div>
+                                        <ul class="profile-info mb-0">
+                                            <li>
+                                                <span class="iconmoon icon-location"></span> Hà Nội, Việt
+                                                Nam
+                                            </li>
+                                            <li class="status not-available">
+                                                <span class="iconmoon icon-profile"></span> Not Immediate
+                                                Available
+                                            </li>
+                                        </ul>
+                                    </div>
+            
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="profile">
+                                    <div class="profile-header">
+                                        <div class="avata">
+                                            <img src="./imgs/recruiter/avata.png" alt="">
+                                        </div>
+                                        <button type="button" class="btn btn-light">View profile</button>
+                                    </div>
+                                    <div class="profile-body">
+                                        <h3 class="name">Jackson D</h3>
+                                        <div class="desc">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Molestias dolorem officia vitae
+                                            dolorum explicabo necessitatibus aspernatur.
+                                        </div>
+                                        <ul class="profile-info mb-0">
+                                            <li>
+                                                <span class="iconmoon icon-location"></span> Hà Nội, Việt
+                                                Nam
+                                            </li>
+                                            <li class=" status available">
+                                                <span class="iconmoon icon-profile"></span> Available Now
+                                            </li>
+                                        </ul>
+                                    </div>
+            
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="profile">
+                                    <div class="profile-header">
+                                        <div class="avata">
+                                            <img src="./imgs/recruiter/avata.png" alt="">
+                                        </div>
+                                        <button type="button" class="btn btn-light">View profile</button>
+                                    </div>
+                                    <div class="profile-body">
+                                        <h3 class="name">Jackson D</h3>
+                                        <div class="desc">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Molestias dolorem officia vitae
+                                            dolorum explicabo necessitatibus aspernatur.
+                                        </div>
+                                        <ul class="profile-info mb-0">
+                                            <li>
+                                                <span class="iconmoon icon-location"></span> Hà Nội, Việt
+                                                Nam
+                                            </li>
+                                            <li class="status not-available">
+                                                <span class="iconmoon icon-profile"></span> Not Immediate
+                                                Available
+                                            </li>
+                                        </ul>
+                                    </div>
+            
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="profile">
+                                    <div class="profile-header">
+                                        <div class="avata">
+                                            <img src="./imgs/recruiter/avata.png" alt="">
+                                        </div>
+                                        <button type="button" class="btn btn-light">View profile</button>
+                                    </div>
+                                    <div class="profile-body">
+                                        <h3 class="name">Jackson D</h3>
+                                        <div class="desc">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Molestias dolorem officia vitae
+                                            dolorum explicabo necessitatibus aspernatur.
+                                        </div>
+                                        <ul class="profile-info mb-0">
+                                            <li>
+                                                <span class="iconmoon icon-location"></span> Hà Nội, Việt
+                                                Nam
+                                            </li>
+                                            <li class=" status available">
+                                                <span class="iconmoon icon-profile"></span> Available Now
+                                            </li>
+                                        </ul>
+                                    </div>
+            
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="profile">
+                                    <div class="profile-header">
+                                        <div class="avata">
+                                            <img src="./imgs/recruiter/avata.png" alt="">
+                                        </div>
+                                        <button type="button" class="btn btn-light">View profile</button>
+                                    </div>
+                                    <div class="profile-body">
+                                        <h3 class="name">Jackson D</h3>
+                                        <div class="desc">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Molestias dolorem officia vitae
+                                            dolorum explicabo necessitatibus aspernatur.
+                                        </div>
+                                        <ul class="profile-info mb-0">
+                                            <li>
+                                                <span class="iconmoon icon-location"></span> Hà Nội, Việt
+                                                Nam
+                                            </li>
+                                            <li class="status not-available">
+                                                <span class="iconmoon icon-profile"></span> Not Immediate
+                                                Available
+                                            </li>
+                                        </ul>
+                                    </div>
+            
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="profile">
+                                    <div class="profile-header">
+                                        <div class="avata">
+                                            <img src="./imgs/recruiter/avata.png" alt="">
+                                        </div>
+                                        <button type="button" class="btn btn-light">View profile</button>
+                                    </div>
+                                    <div class="profile-body">
+                                        <h3 class="name">Jackson D</h3>
+                                        <div class="desc">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Molestias dolorem officia vitae
+                                            dolorum explicabo necessitatibus aspernatur.
+                                        </div>
+                                        <ul class="profile-info mb-0">
+                                            <li>
+                                                <span class="iconmoon icon-location"></span> Hà Nội, Việt
+                                                Nam
+                                            </li>
+                                            <li class=" status available">
+                                                <span class="iconmoon icon-profile"></span> Available Now
+                                            </li>
+                                        </ul>
+                                    </div>
+            
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="profile">
+                                    <div class="profile-header">
+                                        <div class="avata">
+                                            <img src="./imgs/recruiter/avata.png" alt="">
+                                        </div>
+                                        <button type="button" class="btn btn-light">View profile</button>
+                                    </div>
+                                    <div class="profile-body">
+                                        <h3 class="name">Jackson D</h3>
+                                        <div class="desc">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Molestias dolorem officia vitae
+                                            dolorum explicabo necessitatibus aspernatur.
+                                        </div>
+                                        <ul class="profile-info mb-0">
+                                            <li>
+                                                <span class="iconmoon icon-location"></span> Hà Nội, Việt
+                                                Nam
+                                            </li>
+                                            <li class="status not-available">
+                                                <span class="iconmoon icon-profile"></span> Not Immediate
+                                                Available
+                                            </li>
+                                        </ul>
+                                    </div>
+            
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="profile">
+                                    <div class="profile-header">
+                                        <div class="avata">
+                                            <img src="./imgs/recruiter/avata.png" alt="">
+                                        </div>
+                                        <button type="button" class="btn btn-light">View profile</button>
+                                    </div>
+                                    <div class="profile-body">
+                                        <h3 class="name">Jackson D</h3>
+                                        <div class="desc">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Molestias dolorem officia vitae
+                                            dolorum explicabo necessitatibus aspernatur.
+                                        </div>
+                                        <ul class="profile-info mb-0">
+                                            <li>
+                                                <span class="iconmoon icon-location"></span> Hà Nội, Việt
+                                                Nam
+                                            </li>
+                                            <li class=" status available">
+                                                <span class="iconmoon icon-profile"></span> Available Now
+                                            </li>
+                                        </ul>
+                                    </div>
+            
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="profile">
+                                    <div class="profile-header">
+                                        <div class="avata">
+                                            <img src="./imgs/recruiter/avata.png" alt="">
+                                        </div>
+                                        <button type="button" class="btn btn-light">View profile</button>
+                                    </div>
+                                    <div class="profile-body">
+                                        <h3 class="name">Jackson D</h3>
+                                        <div class="desc">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Molestias dolorem officia vitae
+                                            dolorum explicabo necessitatibus aspernatur.
+                                        </div>
+                                        <ul class="profile-info mb-0">
+                                            <li>
+                                                <span class="iconmoon icon-location"></span> Hà Nội, Việt
+                                                Nam
+                                            </li>
+                                            <li class="status not-available">
+                                                <span class="iconmoon icon-profile"></span> Not Immediate
+                                                Available
+                                            </li>
+                                        </ul>
+                                    </div>
+            
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="profile">
+                                    <div class="profile-header">
+                                        <div class="avata">
+                                            <img src="./imgs/recruiter/avata.png" alt="">
+                                        </div>
+                                        <button type="button" class="btn btn-light">View profile</button>
+                                    </div>
+                                    <div class="profile-body">
+                                        <h3 class="name">Jackson D</h3>
+                                        <div class="desc">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Molestias dolorem officia vitae
+                                            dolorum explicabo necessitatibus aspernatur.
+                                        </div>
+                                        <ul class="profile-info mb-0">
+                                            <li>
+                                                <span class="iconmoon icon-location"></span> Hà Nội, Việt
+                                                Nam
+                                            </li>
+                                            <li class=" status available">
+                                                <span class="iconmoon icon-profile"></span> Available Now
+                                            </li>
+                                        </ul>
+                                    </div>
+            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalScheduleInterview" tabindex="-1" aria-labelledby="modalScheduleInterviewLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Schedule interview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span class="iconmoon icon-close"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form-schedule-interview">
+                        <div class="form-group">
+                            <label for="Job_title">Job title</label>
+                            <input type="text" class="form-control" id="Job_title" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="Candidate">Candidate</label>
+                            <input type="text" class="form-control" id="Candidate" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="Interview_date">Interview date</label>
+                            <input type="date" class="form-control" id="Interview_date" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="Interview_time">Interview time</label>
+                            <select class="form-select form-control" id="Interview_time">
+                                <option selected>Select One</option>
+                                <option value="1">8:00</option>
+                                <option value="2">8:30</option>
+                            </select>
+                        </div>
+                        <div class="form-group form-group-submit">
+                            <div class="group-button">
+                                <button type="submit" class="btn btn-primary">Schedule this interview</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center bg-white text-lg-start text-muted border-top">
+        <section class="links">
+            <div class="container">
+                <div class="text-center text-md-start">
+                    <div class="row mt-3">
+                        <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mb-4">
+                            <img src="./imgs/logo-new.svg" alt="vietstar">
+                            <p class="fs-18px py-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <div class="socials">
+                                <i class="fab fa-facebook-f fa-lg me-3"></i>
+                                <i class="fab fa-twitter fa-lg me-3"></i>
+                                <i class="fab fa-instagram fa-lg me-3"></i>
+                                <i class="fab fa-linkedin-in fa-lg me-3"></i>
+                                <i class="fab fa-youtube fa-lg me-3"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="fw-bold mb-40px">Ứng viên</h6>
+                            <p><a href="#" class="text-reset fs-16px no-underline">Việc làm mới nhất</a></p>
+                            <p><a href="#" class="text-reset fs-16px no-underline">CV Hay</a></p>
+                            <p><a href="#" class="text-reset fs-16px no-underline">VietnamSalary</a></p>
+                            <p><a href="#" class="text-reset fs-16px no-underline">CareerMap</a></p>
+                            <p><a href="#" class="text-reset fs-16px no-underline">Cẩm Nang</a></p>
+                            <p><a href="#" class="text-reset fs-16px no-underline">IT Blogs</a></p>
+                            <p><a href="#" class="text-reset fs-16px no-underline">Sơ Đồ Trang Web</a></p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="fw-bold mb-40px">Nhà tuyển dụng</h6>
+                            <p><a href="#" class="text-reset fs-14px no-underline">Đăng tuyển dụng</a></p>
+                            <p><a href="#" class="text-reset fs-14px no-underline">Tìm Hồ Sơ</a></p>
+                            <p><a href="#" class="text-reset fs-14px no-underline">Giải Pháp Talent</a></p>
+                            <p><a href="#" class="text-reset fs-14px no-underline">Solution</a></p>
+                            <p><a href="#" class="text-reset fs-14px no-underline">Sản Phẩm Dịch Vụ</a></p>
+                        </div>
+                        <div class="contact col-md-4 col-lg-3 col-xl-4 mx-auto mb-md-0 mb-4">
+                            <h6 class="fw-bold mb-40px">Liên hệ</h6>
+                            <div class="contact-detail">
+                                <p><i class="far fa-envelope me-3"></i>info@vietstargroup.vn</p>
+                                <p><i class="far fa-phone me-3"></i>02871000555</p>
+                                <p><i class="far fa-map-marker-alt me-3"></i>VP HCM: Tầng 03, Tòa nhà Long Mã Building,
+                                    602-602A Cộng
+                                    Hòa,
+                                    Phường 13,Quận Tân Bình, TP.HCM</p>
+                                <p><i class="far fa-map-marker-alt me-3"></i>VP Hà Nội: Khu đô thị Tây Nam Linh Đàm, Hoàng
+                                    Liệt, Hoàng
+                                    Mai, Hà
+                                    Nội</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="d-flex justify-content-between text-center py-4 border-top">
+            <div class="container">
+                <p class="fs-18px">Copyright © 2022</p>
+                <div class="term-link">
+                    <span class="fs-18px pe-2">All Rights Reserved</span>
+                    <div class="d-inline-block border-start"><a class="fs-18px px-2" href="#">Điều khoản</a></div>
+                    <div class="d-inline-block border-start"><a class="fs-18px ps-2" href="#">Chính sách</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,447 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="././imgs/logo-mini.svg">
+  <link href="./../assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./../assets/css/style.css" rel="stylesheet">
+  <link href="./../assets/css/responsive.css" rel="stylesheet">
+  <link href="./../assets/css/font-awsome.min.css" rel="stylesheet">
+  <script src="./../assets/js/jquery-3.6.0.min.js"></script>
+  <script src="./../assets/js/bootstrap.bundle.min.js"></script>
+  <script defer src="./../assets/js/font-awsome.js"></script>
+  <title>VietStar - Index</title>
+</head>
+
+<body class="container">
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-xl navbar-light bg-light shadow-sm">
+    <div class="container-fluid content">
+      <a class="navbar-brand" href="#">
+        <img src="././imgs/logo-new.svg" alt="vietstar">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav me-3 flex-grow-1 justify-content-end">
+          <a class="nav-link text-main-color active" href="#">Tìm việc làm</a>
+          <a class="nav-link text-main-color" href="#">Tạo CV</a>
+          <a class="nav-link text-main-color" href="#">Vietnam Salary</a>
+          <a class="nav-link text-main-color" href="#">Career Map</a>
+          <a class="nav-link text-main-color" href="#">Cẩm nang</a>
+          <a class="nav-link text-main-color" href="#">Tính lương</a>
+        </div>
+        <div class="d-flex gap-10 my-2">
+          <button class="btn btn-outline-primary">Đăng nhập</button>
+          <button class="btn btn-primary">Tìm ứng viên</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Company cover -->
+  <section class="company-cover">
+    <img src="././imgs/company-cover.jpg" alt="vietstar - company">
+  </section>
+
+  <!-- Job detail title -->
+  <section class="job-detail-title content">
+    <div class="job-detail-banner d-flex gap-24">
+      <div class="job-detail-banner__icon">
+        <img src="././imgs/c-logo-medium.png" alt="vietstar">
+      </div>
+      <div class="job-detail-banner__group d-flex flex-fill">
+        <div class="job-detail-banner__detail">
+          <h3 class="banner__title">Nhân viên chăm sóc khách hàng</h3>
+          <div class="banner__company">Công ty cổ phần Thịnh Vượng</div>
+          <div class="banner__due-day">
+            <i class="far fa-calendar-day"></i>
+            Hạn nộp hồ sơ: <span>30/6/2022</span>
+          </div>
+        </div>
+        <div class="btn-group-vertical job-detail-banner__actions">
+          <button class="btn btn-primary">Ứng tuyển ngay</button>
+          <button class="btn btn-outline-primary"><i class="far fa-heart me-2"></i>Lưu tin</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Company detail title -->
+  <section class="company-job-detail job-detail-title content">
+    <div class="job-detail-banner d-flex gap-24 justify-content-between">
+      <div class="job-detail-banner__icon">
+        <img src="././imgs/c-logo-medium.png" alt="vietstar">
+      </div>
+      <div class="job-detail-banner__detail">
+        <div class="row">
+          <div class="col-xl-7 col-lg-12">
+            <h3 class="banner__title mb-1">Multimedia Design</h3>
+            <div class="banner__company">Manufacturing</div>
+            <div class="banner__due-day mb-3">
+              <i class="far fa-user-alt"></i> Member Since, Jul 28, 2018
+            </div>
+            <div class="banner__due-day mb-3">
+              <i class="far fa-map-marker-alt"></i> Address USA
+            </div>
+          </div>
+          <div  class="col-xl-5 col-lg-12">
+            <div class="banner__due-day mb-3">
+              <i class="far fa-phone"></i> 02871000555
+            </div>
+            <div class="banner__due-day mb-3">
+              <i class="far fa-envelope"></i> info@vietstargroup.vn
+            </div>
+            <div class="banner__due-day mb-3">
+              <i class="far fa-globe"></i> http://www.comapnydomain.com
+            </div>
+            <div class="banner__due-day fs-14px mb-3">
+              <i class="fab fa-facebook-f fa-lg me-3"></i>
+              <i class="fab fa-twitter fa-lg me-3"></i>
+              <i class="fab fa-instagram fa-lg me-3"></i>
+              <i class="fab fa-linkedin-in fa-lg me-3"></i>
+              <i class="fab fa-youtube fa-lg me-3"></i>
+            </div>
+          </div>
+        </div>
+        <div class="job-detail-banner__actions d-flex flex-row gap-16">
+          <button class="btn btn-primary"><i class="far fa-envelope me-2"></i>Gửi tin nhắn</button>
+          <button class="btn btn-outline-primary"><i class="far fa-heart me-2"></i>Lưu tin</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content mt-4">
+    <div class="row">
+      <div class="col-xxl-8 col-xl-12 pe-xxl-4">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <button class="nav-link active" id="detail-tab" data-bs-toggle="tab" data-bs-target="#detail" aria-controls="detail">
+              Chi tiết tuyển dụng
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" aria-controls="profile">
+              Thông tin công ty
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane show active" id="detail" aria-labelledby="detail-tab">
+            <!-- Job detail -->
+            <section class="job-detail-content">
+              <div class="require-card">
+                <div class="d-flex gap-30">
+                  <div class="flex-grow-1 d-flex gap-16 w-100">
+                    <div class="require-card__item-icon">
+                      <div class="icon-salary icon-size-30"></div>
+                    </div>
+                    <div class="require-card__item-content">
+                      <p>Mức lương</p>
+                      <strong>7-15 triệu</strong>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 d-flex gap-16 w-100">
+                    <div class="require-card__item-icon">
+                      <div class="icon-team icon-size-30"></div>
+                    </div>
+                    <div class="require-card__item-content">
+                      <p>Số lượng tuyển</p>
+                      <strong>6 người</strong>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 d-flex gap-16 w-100">
+                    <div class="require-card__item-icon">
+                      <div class="icon-calendar icon-size-30"></div>
+                    </div>
+                    <div class="require-card__item-content">
+                      <p>Hình thức</p>
+                      <strong>Toàn thời gian</strong>
+                    </div>
+                  </div>
+                </div>
+                <div style="height: 38px;"></div>
+                <div class="d-flex gap-30">
+                  <div class="flex-grow-1 d-flex gap-16 w-100">
+                    <div class="require-card__item-icon">
+                      <div class="icon-level icon-size-30"></div>
+                    </div>
+                    <div class="require-card__item-content">
+                      <p>Cấp bậc</p>
+                      <strong>Nhân viên</strong>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 d-flex gap-16 w-100">
+                    <div class="require-card__item-icon">
+                      <div class="icon-gender icon-size-30"></div>
+                    </div>
+                    <div class="require-card__item-content">
+                      <p>Giới tính</p>
+                      <strong>Không yêu cầu</strong>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 d-flex gap-16 w-100">
+                    <div class="require-card__item-icon">
+                      <div class="icon-suicase icon-size-30"></div>
+                    </div>
+                    <div class="require-card__item-content">
+                      <p>Kinh nghiệm</p>
+                      <strong>Không yêu cầu</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h6 class="mb-3">Mô tả công việc</h6>
+              <p class="job-detail-content__richtext">Richtext here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+              <h6 class="mb-3">Yêu cầu</h6>
+              <p class="job-detail-content__richtext">Richtext here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+              <h6 class="mb-3">Quyền lợi</h6>
+              <p class="job-detail-content__richtext">Richtext here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+              
+              <div class="share-detail d-flex justify-content-between align-items-center">
+                <div class="share-detail__social m-2">
+                  <h6 class="mb-0">Chia sẻ việc làm này: &nbsp;
+                    <span class="me-3"><i class="fab fa-linkedin-in fa-lg"></i></span>
+                    <span class="me-3"><i class="fab fa-facebook-f fa-lg"></i></span>
+                    <span class="me-3"><i class="fab fa-twitter fa-lg"></i></span>
+                  </h6>
+                </div>
+                <div class="__actions">
+                  <div class="flex-gap gap-10 my-2 my-lg-0">
+                    <button class="btn btn-outline-primary">Lưu tin</button>
+                    <button class="btn btn-primary">Ứng tuyển ngay</button>
+                  </div>
+                </div>
+              </div>
+
+              <h6 class="mb-2">Job tags/Skills</h6>
+              <div class="mb-5">
+                <span class="badge badge-light">Tuyển dụng</span>
+                <span class="badge badge-light">HTML</span>
+                <span class="badge badge-light">CSKH</span>
+              </div>
+            </section>
+          </div>
+          <div class="tab-pane" id="profile" aria-labelledby="profile-tab">
+            <!-- company detail -->
+            <section class="job-detail-content">
+              <div class="require-card">
+                <div class="d-flex gap-30">
+                  <div class="flex-grow-1 d-flex gap-16 w-100">
+                    <div class="require-card__item-icon">
+                      <div class="icon-salary icon-size-30"></div>
+                    </div>
+                    <div class="require-card__item-content">
+                      <p>Mức lương</p>
+                      <strong>7-15 triệu</strong>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 d-flex gap-16 w-100">
+                    <div class="require-card__item-icon">
+                      <div class="icon-team icon-size-30"></div>
+                    </div>
+                    <div class="require-card__item-content">
+                      <p>Quy mô</p>
+                      <strong>20-50</strong>
+                    </div>
+                  </div>
+                </div>
+                <div style="height: 38px;"></div>
+                <div class="d-flex gap-30">
+                  <div class="flex-grow-1 d-flex gap-16 w-100">
+                    <div class="require-card__item-icon">
+                      <div class="icon-calendar icon-size-30"></div>
+                    </div>
+                    <div class="require-card__item-content">
+                      <p>Thời gian thành lập</p>
+                      <strong>2004</strong>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 d-flex gap-16 w-100">
+                    <div class="require-card__item-icon">
+                      <div class="icon-suicase icon-size-30"></div>
+                    </div>
+                    <div class="require-card__item-content">
+                      <p>Vị trí đang tuyển</p>
+                      <strong>3</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h6 class="mb-3">Về công ty</h6>
+              <p class="job-detail-content__richtext">Richtext here: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum condimentum mauris, non posuere urna consectetur quis. Suspendisse semper eu eros eget convallis. Etiam mattis blandit nulla, non venenatis risus varius vel. Morbi fringilla dignissim elit id blandit. Pellentesque vel luctus felis. Vestibulum eros nibh, consequat ut felis in, vehicula lobortis quam. Duis diam mauris, convallis in risus in, gravida hendrerit lacus. Donec euismod accumsan sem et aliquam. Duis a velit eget urna mattis ultricies. Aliquam nibh ipsum, aliquet nec sollicitudin non, fermentum nec diam. Vestibulum ac urna vehicula, dapibus dui quis, aliquet neque. Sed ac tristique purus. Vestibulum tempor, erat eu porta tempor, erat ipsum cursus dui, eu tempus mauris leo id mi. Sed ultrices sollicitudin vehicula. Proin in ullamcorper massa.</p>
+
+              <!-- current jobs -->
+              <section class="related-jobs">
+                <div class="related-jobs__title d-flex justify-content-between align-items-center">
+                  <h6>Vị trí đang tuyển</h6>
+                </div>
+                <div class="row related-jobs__jobs px-2">
+                  <div class="w-100 card-news gap-16">
+                    <div class="card-news__icon">
+                      <img src="././imgs/c-logo-mini.png" alt="vietstar">
+                    </div>
+                    <div class="card-news__content">
+                      <h6 class="card-news__content-title">Nhân viên chăm sóc khách hàng</h6>
+                      <p class="card-news__content-detail">Công ty cổ phần Thịnh Vượng</p>
+                      <div class="card-news__content-footer">
+                        <div class="card-news__content-footer__location">
+                          <span class="badge rounded-pill pill pill-location">Hồ Chí Minh</span>
+                          <span class="badge rounded-pill pill pill-worktime">Full-time</span>
+                        </div>
+                        <div class="card-news__content-footer__salary">
+                          15-20 triệu
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-100 card-news gap-16">
+                    <div class="card-news__icon">
+                      <img src="././imgs/c-logo-mini.png" alt="vietstar">
+                    </div>
+                    <div class="card-news__content">
+                      <h6 class="card-news__content-title">Nhân viên chăm sóc khách hàng</h6>
+                      <p class="card-news__content-detail">Công ty cổ phần Thịnh Vượng</p>
+                      <div class="card-news__content-footer">
+                        <div class="card-news__content-footer__location">
+                          <span class="badge rounded-pill pill pill-location">Hồ Chí Minh</span>
+                          <span class="badge rounded-pill pill pill-worktime">Full-time</span>
+                        </div>
+                        <div class="card-news__content-footer__salary">
+                          15-20 triệu
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-4 col-xl-12 ps-4">
+        <!-- realated jobs -->
+        <section class="related-jobs">
+          <div class="related-jobs__title d-flex justify-content-between align-items-center">
+            <h6>Việc làm liên quan</h6>
+            <button class="btn btn-round btn-link btn-sm main-color">Xem tất cả <i class="fas fa-arrow-right ms-2"></i></button>
+          </div>
+          <div class="row related-jobs__jobs pe-2">
+            <div class="col-xl-4 col-xxl-12 card-news gap-16">
+              <div class="card-news__icon">
+                <img src="././imgs/c-logo-mini.png" alt="vietstar">
+              </div>
+              <div class="card-news__content">
+                <h6 class="card-news__content-title">Nhân viên chăm sóc khách hàng</h6>
+                <p class="card-news__content-detail">Công ty cổ phần Thịnh Vượng</p>
+                <div class="card-news__content-footer">
+                  <div class="card-news__content-footer__location">
+                    <span class="badge rounded-pill pill pill-location">Hồ Chí Minh</span>
+                    <span class="badge rounded-pill pill pill-worktime">Full-time</span>
+                  </div>
+                  <div class="card-news__content-footer__salary">
+                    15-20 triệu
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-xxl-12 card-news gap-16">
+              <div class="card-news__icon">
+                <img src="././imgs/c-logo-mini.png" alt="vietstar">
+              </div>
+              <div class="card-news__content">
+                <h6 class="card-news__content-title">Nhân viên chăm sóc khách hàng</h6>
+                <p class="card-news__content-detail">Công ty cổ phần Thịnh Vượng</p>
+                <div class="card-news__content-footer">
+                  <div class="card-news__content-footer__location">
+                    <span class="badge rounded-pill pill pill-location">Hồ Chí Minh</span>
+                    <span class="badge rounded-pill pill pill-worktime">Full-time</span>
+                  </div>
+                  <div class="card-news__content-footer__salary">
+                    15-20 triệu
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- map company -->
+        <section class="related-jobs">
+          <div class="related-jobs__title">
+            <h6>Map</h6>
+          </div>
+          <div class="row related-jobs__jobs">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15676.683318442645!2d106.7175549591139!3d10.798224861204112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527c2f8f30911%3A0x36ac5073f8c91acd!2sLandmark%20TVGB%2081!5e0!3m2!1svi!2s!4v1657302331070!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Footer -->
+  <footer class="content text-center text-lg-start text-muted border-top">
+    <section class="links">
+      <div class="text-center text-md-start">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mb-4">
+            <img src="././imgs/logo-new.svg" alt="vietstar">
+            <p class="fs-18px py-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <div class="socials">
+              <i class="fab fa-facebook-f fa-lg me-3"></i>
+              <i class="fab fa-twitter fa-lg me-3"></i>
+              <i class="fab fa-instagram fa-lg me-3"></i>
+              <i class="fab fa-linkedin-in fa-lg me-3"></i>
+              <i class="fab fa-youtube fa-lg me-3"></i>
+            </div>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="fw-bold mb-40px">Ứng viên</h6>
+            <p><a href="#" class="text-reset fs-16px no-underline">Việc làm mới nhất</a></p>
+            <p><a href="#" class="text-reset fs-16px no-underline">CV Hay</a></p>
+            <p><a href="#" class="text-reset fs-16px no-underline">VietnamSalary</a></p>
+            <p><a href="#" class="text-reset fs-16px no-underline">CareerMap</a></p>
+            <p><a href="#" class="text-reset fs-16px no-underline">Cẩm Nang</a></p>
+            <p><a href="#" class="text-reset fs-16px no-underline">IT Blogs</a></p>
+            <p><a href="#" class="text-reset fs-16px no-underline">Sơ Đồ Trang Web</a></p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="fw-bold mb-40px">Nhà tuyển dụng</h6>
+            <p><a href="#" class="text-reset fs-14px no-underline">Đăng tuyển dụng</a></p>
+            <p><a href="#" class="text-reset fs-14px no-underline">Tìm Hồ Sơ</a></p>
+            <p><a href="#" class="text-reset fs-14px no-underline">Giải Pháp Talent</a></p>
+            <p><a href="#" class="text-reset fs-14px no-underline">Solution</a></p>
+            <p><a href="#" class="text-reset fs-14px no-underline">Sản Phẩm Dịch Vụ</a></p>
+          </div>
+          <div class="contact col-md-4 col-lg-3 col-xl-4 mx-auto mb-md-0 mb-4">
+            <h6 class="fw-bold mb-40px">Liên hệ</h6>
+            <div class="contact-detail">
+              <p><i class="far fa-envelope me-3"></i>info@vietstargroup.vn</p>
+              <p><i class="far fa-phone me-3"></i>02871000555</p>
+              <p><i class="far fa-map-marker-alt me-3"></i>VP HCM: Tầng 03, Tòa nhà Long Mã Building, 602-602A Cộng Hòa, Phường 13,Quận Tân Bình, TP.HCM</p>
+              <p><i class="far fa-map-marker-alt me-3"></i>VP Hà Nội: Khu đô thị Tây Nam Linh Đàm, Hoàng Liệt, Hoàng Mai, Hà Nội</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="d-flex justify-content-between text-center py-4 border-top">
+      <p class="fs-18px">Copyright © 2022</p>
+      <div class="term-link">
+        <span class="fs-18px pe-2">All Rights Reserved</span>
+        <div class="d-inline-block border-start"><a class="fs-18px px-2" href="#">Điều khoản</a></div>
+        <div class="d-inline-block border-start"><a class="fs-18px ps-2" href="#">Chính sách</a></div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+
+</body>
+
+</html>

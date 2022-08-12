@@ -1,0 +1,484 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./imgs/logo-mini.svg">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/responsive.css" rel="stylesheet">
+  <link href="./css/font-awsome.min.css" rel="stylesheet">
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script defer src="./js/font-awsome.js"></script>
+  <title>VietStar - Index</title>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-xl navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./imgs/logo-new.svg" alt="vietstar">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav me-3 flex-grow-1 justify-content-end">
+          <a class="nav-link text-main-color active" href="#">Tìm việc làm</a>
+          <a class="nav-link text-main-color" href="#">Tạo CV</a>
+          <a class="nav-link text-main-color" href="#">Vietnam Salary</a>
+          <a class="nav-link text-main-color" href="#">Career Map</a>
+          <a class="nav-link text-main-color" href="#">Cẩm nang</a>
+          <a class="nav-link text-main-color" href="#">Tính lương</a>
+        </div>
+        <div class="d-flex gap-10 my-2">
+          <button class="btn btn-outline-primary">Đăng nhập</button>
+          <button class="btn btn-primary">Tìm ứng viên</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Bar -->
+  <section class="header-bar">
+    <div class="header-bar-bg">
+      <div class="header-bar_bg"></div>
+      <div class="header-bar-recruiter"></div>
+    </div>
+    <div class="container position-relative">
+      <h1 class="header-bar__title">Cơ hội ứng tuyển những công việc bạn mong muốn</h1>
+      <form class="search-form row g-3">
+        <div class="col-xxl-4 col-6">
+          <div class="icon-search__inner"></div>
+          <label for="inputPassword2" class="visually-hidden">Tìm việc tại VietStar</label>
+          <input type="text" class="form-control shadow-sm" id="inputPassword2"
+            placeholder="Tên công việc, vị trí bạn muốn ứng tuyển...">
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-3">Tìm việc ngay</button>
+        </div>
+      </form>
+      <p>
+        <a class="text-reset fs-14px no-underline main-color" data-bs-toggle="collapse" role="button"
+          aria-expanded="false" data-bs-target="#collapseExample">
+          <i class="far fa-search-plus me-2"></i>
+          Tìm kiếm nâng cao
+        </a>
+      </p>
+      <div class="collapse mt-3" id="collapseExample">
+        <div class="row">
+          <div class="col-xl-12 col-xxl-8">
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <label class="form-label">Tỉnh/Thành phố</label>
+                <select class="form-select shadow-sm" aria-label="Tỉnh/Thành phố">
+                  <option selected>----</option>
+                  <option value="1">Hà Nội</option>
+                  <option value="2">Hồ Chí Minh</option>
+                  <option value="3">Khác</option>
+                </select>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <label class="form-label">Hình thức làm việc</label>
+                <select class="form-select shadow-sm" aria-label="Hình thức làm việc">
+                  <option selected>----</option>
+                  <option value="1">Full-time</option>
+                  <option value="2">Part-time</option>
+                  <option value="3">Remote</option>
+                </select>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <label class="form-label">Chuyên ngành</label>
+                <select class="form-select shadow-sm" aria-label="Chuyên ngành">
+                  <option selected>----</option>
+                  <option value="1">IT</option>
+                  <option value="2">Kế toán</option>
+                  <option value="3">CSKH</option>
+                </select>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <label class="form-label">Cấp bậc</label>
+                <select class="form-select shadow-sm" aria-label="Cấp bậc">
+                  <option selected>----</option>
+                  <option value="1">Nhân viên</option>
+                  <option value="2">Chuyên viên</option>
+                  <option value="3">Trưởng phòng</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recruitment News -->
+  <section class="recruitment-news content">
+    <div class="container">
+      <h2 class="text-center">Tin tuyển dụng</h2>
+      <ul class="nav nav-custom justify-content-center mx-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Việc làm nổi bật</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Việc làm VIP ($1000+)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Việc làm từ TopHunter</a>
+        </li>
+      </ul>
+      <div class="r-news">
+        <div class="row mb-3">
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card-news w-100 gap-16">
+              <div class="card-news__icon">
+                <img src="./imgs/c-logo-mini.png" alt="vietstar">
+              </div>
+              <div class="card-news__content">
+                <h6 class="card-news__content-title">Nhân viên chăm sóc khách hàng</h6>
+                <p class="card-news__content-detail">Công ty cổ phần Thịnh Vượng</p>
+                <div class="card-news__content-footer">
+                  <div class="card-news__content-footer__location">
+                    <span class="badge rounded-pill pill pill-location">Hồ Chí Minh</span>
+                    <span class="badge rounded-pill pill pill-worktime">Full-time</span>
+                  </div>
+                  <div class="card-news__content-footer__salary">
+                    15-20 triệu
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card-news w-100 h-100 gap-16">
+              <div class="card-news__icon">
+                <img src="./imgs/c-logo-mini.png" alt="vietstar">
+              </div>
+              <div class="card-news__content">
+                <h6 class="card-news__content-title">Nhân viên chăm sóc khách hàng</h6>
+                <p class="card-news__content-detail">Công ty cổ phần Thịnh Vượng</p>
+                <div class="card-news__content-footer">
+                  <div class="card-news__content-footer__location">
+                    <span class="badge rounded-pill pill pill-location">Hồ Chí Minh</span>
+                    <span class="badge rounded-pill pill pill-worktime">Full-time</span>
+                  </div>
+                  <div class="card-news__content-footer__salary">
+                    15-20 triệu
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card-news w-100 h-100 gap-16">
+              <div class="card-news__icon">
+                <img src="./imgs/c-logo-mini.png" alt="vietstar">
+              </div>
+              <div class="card-news__content">
+                <h6 class="card-news__content-title">Nhân viên chăm sóc khách hàng</h6>
+                <p class="card-news__content-detail">Công ty cổ phần Thịnh Vượng</p>
+                <div class="card-news__content-footer">
+                  <div class="card-news__content-footer__location">
+                    <span class="badge rounded-pill pill pill-location">Hồ Chí Minh</span>
+                    <span class="badge rounded-pill pill pill-worktime">Full-time</span>
+                  </div>
+                  <div class="card-news__content-footer__salary">
+                    15-20 triệu
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card-news w-100 h-100 gap-16">
+              <div class="card-news__icon">
+                <img src="./imgs/c-logo-mini.png" alt="vietstar">
+              </div>
+              <div class="card-news__content">
+                <h6 class="card-news__content-title">Nhân viên chăm sóc khách hàng</h6>
+                <p class="card-news__content-detail">Công ty cổ phần Thịnh Vượng</p>
+                <div class="card-news__content-footer">
+                  <div class="card-news__content-footer__location">
+                    <span class="badge rounded-pill pill pill-location">Hồ Chí Minh</span>
+                    <span class="badge rounded-pill pill pill-worktime">Full-time</span>
+                  </div>
+                  <div class="card-news__content-footer__salary">
+                    15-20 triệu
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card-news w-100 h-100 gap-16">
+              <div class="card-news__icon">
+                <img src="./imgs/c-logo-mini.png" alt="vietstar">
+              </div>
+              <div class="card-news__content">
+                <h6 class="card-news__content-title">Nhân viên chăm sóc khách hàng</h6>
+                <p class="card-news__content-detail">Công ty cổ phần Thịnh Vượng</p>
+                <div class="card-news__content-footer">
+                  <div class="card-news__content-footer__location">
+                    <span class="badge rounded-pill pill pill-location">Hồ Chí Minh</span>
+                    <span class="badge rounded-pill pill pill-worktime">Full-time</span>
+                  </div>
+                  <div class="card-news__content-footer__salary">
+                    15-20 triệu
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card-news w-100 h-100 gap-16">
+              <div class="card-news__icon">
+                <img src="./imgs/c-logo-mini.png" alt="vietstar">
+              </div>
+              <div class="card-news__content">
+                <h6 class="card-news__content-title">Nhân viên chăm sóc khách hàng</h6>
+                <p class="card-news__content-detail">Công ty cổ phần Thịnh Vượng</p>
+                <div class="card-news__content-footer">
+                  <div class="card-news__content-footer__location">
+                    <span class="badge rounded-pill pill pill-location">Hồ Chí Minh</span>
+                    <span class="badge rounded-pill pill pill-worktime">Full-time</span>
+                  </div>
+                  <div class="card-news__content-footer__salary">
+                    15-20 triệu
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-4">
+        <div class="col"></div>
+        <div class="col d-flex justify-content-center">
+          <nav aria-label="Page navigation">
+            <ul class="pagination">
+              <li class="page-item page-item__icon">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <i class="far fa-angle-left"></i>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item page-item__icon">
+                <a class="page-link" href="#" aria-label="...">
+                  <i class="far fa-ellipsis-h"></i>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">9</a></li>
+              <li class="page-item active"><a class="page-link" href="#">10</a></li>
+              <li class="page-item"><a class="page-link" href="#">11</a></li>
+              <li class="page-item page-item__icon">
+                <a class="page-link" href="#" aria-label="...">
+                  <i class="far fa-ellipsis-h"></i>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">999</a></li>
+              <li class="page-item page-item__icon">
+                <a class="page-link" href="#" aria-label="Next">
+                  <i class="far fa-angle-right"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col d-flex justify-content-end">
+          <button class="btn btn-round btn-link btn-sm main-color">Xem tất cả <i
+              class="fas fa-arrow-right ms-2"></i></button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- About us -->
+  <section class="about-us">
+    <div class="about-us-bg"></div>
+    <div class="container">
+      <h2>Về chúng tôi</h2>
+      <p class="fs-18px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+      <div class="row pt-5">
+        <div class="col-6">
+          <h3>3.000.000 +</h3>
+          <p>Ứng viên truy cập hàng tháng</p>
+          <h3 class="pt-4">500.000 +</h3>
+          <p>Ứng viên tiềm năng</p>
+        </div>
+        <div class="col-6 ps-4">
+          <h3>1.500 +</h3>
+          <p>Doanh nghiệp tin dùng</p>
+          <h3 class="pt-4">3.000.000 +</h3>
+          <p>Vị trí tuyển thành công</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partner -->
+  <section class="partner">
+    <div class="container">
+      <h5>Cơ hội hợp tác với những nhà tuyển dụng hàng đầu</h5>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row w-100">
+              <div class="col-md-3 col-sm-6">
+                <div class="partner-item__img">
+                  <img src="./imgs/samsung-logo.png" alt="1 slide">
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="partner-item__img">
+                  <img src="./imgs/petro-logo.png" alt="1 slide">
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="partner-item__img">
+                  <img src="./imgs/samsung-logo.png" alt="1 slide">
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="partner-item__img">
+                  <img src="./imgs/petro-logo.png" alt="1 slide">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blogs slider -->
+  <section class="blogs-slider">
+    <div class="container">
+      <h2>Cẩm nang nghề nghiệp</h2>
+      <div class="__row justify-content-between">
+        <div class="card-list d-flex flex-row gap-24">
+          <div class="card-list-item">
+            <div class="card-list-item__img">
+              <img src="./imgs/artical_thumb.png" alt="vietstar">
+            </div>
+            <div class="card-list-item__title">Bí kíp tạo ấn tượng đầu tiên với nhà tuyển dụng xxxxxxx</div>
+          </div>
+          <div class="card-list-item">
+            <img src="./imgs/artical_thumb.png" alt="vietstar">
+            <div class="card-list-item__title">Bí kíp tạo ấn tượng đầu tiên với nhà tuyển dụng xxxxxxx</div>
+          </div>
+          <div class="card-list-item">
+            <img src="./imgs/artical_thumb.png" alt="vietstar">
+            <div class="card-list-item__title">Bí kíp tạo ấn tượng đầu tiên với nhà tuyển dụng xxxxxxx</div>
+          </div>
+          <div class="card-list-item">
+            <img src="./imgs/artical_thumb.png" alt="vietstar">
+            <div class="card-list-item__title">Bí kíp tạo ấn tượng đầu tiên với nhà tuyển dụng xxxxxxx</div>
+          </div>
+        </div>
+        <!-- button -->
+        <div class="d-flex align-self-center">
+          <button class="btn btn-round btn-link main-color shadow-sm white-bg">Xem tất cả <i
+              class="fas fa-arrow-right ms-2"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- For recruiter -->
+  <section class="for-recruiter main-bg">
+    <div class="container">
+      <div class="d-flex justify-content-between">
+        <div>
+          <h2>Dành cho nhà tuyển dụng</h2>
+          <p>Chúng tôi có những giải pháp tối ưu phù hợp với nhiều loại hình công ty và tiêu chuẩn riêng</p>
+        </div>
+        <div class="my-auto">
+          <button class="btn btn-outline-reverse">Đăng tin tuyển dụng</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center bg-white text-lg-start text-muted border-top">
+    <section class="links">
+      <div class="container">
+        <div class="text-center text-md-start">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mb-4">
+              <img src="./imgs/logo-new.svg" alt="vietstar">
+              <p class="fs-18px py-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+              <div class="socials">
+                <i class="fab fa-facebook-f fa-lg me-3"></i>
+                <i class="fab fa-twitter fa-lg me-3"></i>
+                <i class="fab fa-instagram fa-lg me-3"></i>
+                <i class="fab fa-linkedin-in fa-lg me-3"></i>
+                <i class="fab fa-youtube fa-lg me-3"></i>
+              </div>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="fw-bold mb-40px">Ứng viên</h6>
+              <p><a href="#" class="text-reset fs-16px no-underline">Việc làm mới nhất</a></p>
+              <p><a href="#" class="text-reset fs-16px no-underline">CV Hay</a></p>
+              <p><a href="#" class="text-reset fs-16px no-underline">VietnamSalary</a></p>
+              <p><a href="#" class="text-reset fs-16px no-underline">CareerMap</a></p>
+              <p><a href="#" class="text-reset fs-16px no-underline">Cẩm Nang</a></p>
+              <p><a href="#" class="text-reset fs-16px no-underline">IT Blogs</a></p>
+              <p><a href="#" class="text-reset fs-16px no-underline">Sơ Đồ Trang Web</a></p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="fw-bold mb-40px">Nhà tuyển dụng</h6>
+              <p><a href="#" class="text-reset fs-14px no-underline">Đăng tuyển dụng</a></p>
+              <p><a href="#" class="text-reset fs-14px no-underline">Tìm Hồ Sơ</a></p>
+              <p><a href="#" class="text-reset fs-14px no-underline">Giải Pháp Talent</a></p>
+              <p><a href="#" class="text-reset fs-14px no-underline">Solution</a></p>
+              <p><a href="#" class="text-reset fs-14px no-underline">Sản Phẩm Dịch Vụ</a></p>
+            </div>
+            <div class="contact col-md-4 col-lg-3 col-xl-4 mx-auto mb-md-0 mb-4">
+              <h6 class="fw-bold mb-40px">Liên hệ</h6>
+              <div class="contact-detail">
+                <p><i class="far fa-envelope me-3"></i>info@vietstargroup.vn</p>
+                <p><i class="far fa-phone me-3"></i>02871000555</p>
+                <p><i class="far fa-map-marker-alt me-3"></i>VP HCM: Tầng 03, Tòa nhà Long Mã Building, 602-602A Cộng
+                  Hòa,
+                  Phường 13,Quận Tân Bình, TP.HCM</p>
+                <p><i class="far fa-map-marker-alt me-3"></i>VP Hà Nội: Khu đô thị Tây Nam Linh Đàm, Hoàng Liệt, Hoàng
+                  Mai, Hà
+                  Nội</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="d-flex justify-content-between text-center py-4 border-top">
+      <div class="container">
+        <p class="fs-18px">Copyright © 2022</p>
+        <div class="term-link">
+          <span class="fs-18px pe-2">All Rights Reserved</span>
+          <div class="d-inline-block border-start"><a class="fs-18px px-2" href="#">Điều khoản</a></div>
+          <div class="d-inline-block border-start"><a class="fs-18px ps-2" href="#">Chính sách</a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+
+</body>
+
+</html>
